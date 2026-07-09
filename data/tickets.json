@@ -1,0 +1,50 @@
+[
+  {
+    "id": "OPS-101",
+    "title": "Export to CSV button does nothing on Reports page",
+    "description": "When I click 'Export to CSV' on the Reports dashboard, the button spins for a second and then nothing happens. No file downloads. Happens every time on Chrome and Firefox. This worked fine last week.",
+    "reporter": "grace.lin@customer.com",
+    "created_at": "2026-07-01T09:14:00Z",
+    "status": "open"
+  },
+  {
+    "id": "OPS-102",
+    "title": "Feature request: allow custom date ranges in Reports",
+    "description": "Right now Reports only supports Last 7 days / Last 30 days / Last quarter. It would be great to pick a custom start and end date so we can align reports with our internal billing cycle.",
+    "reporter": "marco.dias@customer.com",
+    "created_at": "2026-07-01T11:02:00Z",
+    "status": "open"
+  },
+  {
+    "id": "OPS-103",
+    "title": "How do I invite teammates to my workspace?",
+    "description": "We just signed up for the Team plan. I can't find where to add my colleagues as members. Is there a settings page for this?",
+    "reporter": "aisha.khan@customer.com",
+    "created_at": "2026-07-02T08:40:00Z",
+    "status": "open"
+  },
+  {
+    "id": "OPS-104",
+    "title": "App crashes when uploading files larger than 50MB",
+    "description": "Uploading any file over ~50MB causes the whole app tab to freeze and eventually crash with a white screen. Tried on two different machines, same result. This is blocking us from migrating our data.",
+    "reporter": "tom.becker@customer.com",
+    "created_at": "2026-07-02T14:21:00Z",
+    "status": "open"
+  },
+  {
+    "id": "OPS-105",
+    "title": "Export button not working (duplicate?)",
+    "description": "Clicking export on the reports screen does not download anything. Using Chrome on Windows 11.",
+    "reporter": "priya.nair@customer.com",
+    "created_at": "2026-07-03T10:05:00Z",
+    "status": "open"
+  },
+  {
+    "id": "OPS-106",
+    "title": "API rate limit is too low for our integration",
+    "description": "We're hitting the 100 requests/minute rate limit constantly when syncing data through the public API. Can this be increased for Enterprise customers, or is there a batching endpoint we should use instead?",
+    "reporter": "dev-team@bigcorp.com",
+    "created_at": "2026-07-03T16:47:00Z",
+    "status": "open"
+  }
+]

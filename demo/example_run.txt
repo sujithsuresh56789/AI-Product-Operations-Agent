@@ -1,0 +1,112 @@
+Running agent over 6 mock tickets...
+
+==============================================================================
+OPS-101: Export to CSV button does nothing on Reports page
+------------------------------------------------------------------------------
+Category:     bug
+Priority:     high
+Duplicate of: None
+Action:       route_to_engineering
+Retrieved:    ['kb_export_csv', 'kb_custom_date_ranges']
+Response:     Hi there — thanks for the report! This is a known issue our team is actively working on. We've included a workaround below based on our internal documentation a...
+
+Trace:
+  - classify_ticket -> category=bug, priority=high
+  - check_duplicates -> duplicate_of=None
+  - retrieve_docs -> sources=['kb_export_csv', 'kb_custom_date_ranges']
+  - decide_action -> action=route_to_engineering
+  - generate_response -> drafted reply
+  - update_ticket -> 4 write(s) applied
+
+==============================================================================
+OPS-102: Feature request: allow custom date ranges in Reports
+------------------------------------------------------------------------------
+Category:     feature_request
+Priority:     medium
+Duplicate of: None
+Action:       route_to_engineering
+Retrieved:    ['kb_custom_date_ranges', 'kb_export_csv']
+Response:     Hi there — thanks for the report! This is a known issue our team is actively working on. We've included a workaround below based on our internal documentation a...
+
+Trace:
+  - classify_ticket -> category=feature_request, priority=medium
+  - check_duplicates -> duplicate_of=None
+  - retrieve_docs -> sources=['kb_custom_date_ranges', 'kb_export_csv']
+  - decide_action -> action=route_to_engineering
+  - generate_response -> drafted reply
+  - update_ticket -> 4 write(s) applied
+
+==============================================================================
+OPS-103: How do I invite teammates to my workspace?
+------------------------------------------------------------------------------
+Category:     question
+Priority:     low
+Duplicate of: None
+Action:       auto_respond
+Retrieved:    ['kb_invite_teammates', 'kb_export_csv']
+Response:     Hi there — thanks for the report! This is a known issue our team is actively working on. We've included a workaround below based on our internal documentation a...
+
+Trace:
+  - classify_ticket -> category=question, priority=low
+  - check_duplicates -> duplicate_of=None
+  - retrieve_docs -> sources=['kb_invite_teammates', 'kb_export_csv']
+  - decide_action -> action=auto_respond
+  - generate_response -> drafted reply
+  - update_ticket -> 3 write(s) applied
+
+==============================================================================
+OPS-104: App crashes when uploading files larger than 50MB
+------------------------------------------------------------------------------
+Category:     bug
+Priority:     critical
+Duplicate of: None
+Action:       route_to_engineering
+Retrieved:    ['kb_large_file_uploads', 'kb_export_csv']
+Response:     Hi there — thanks for the report! This is a known issue our team is actively working on. We've included a workaround below based on our internal documentation a...
+
+Trace:
+  - classify_ticket -> category=bug, priority=critical
+  - check_duplicates -> duplicate_of=None
+  - retrieve_docs -> sources=['kb_large_file_uploads', 'kb_export_csv']
+  - decide_action -> action=route_to_engineering
+  - generate_response -> drafted reply
+  - update_ticket -> 4 write(s) applied
+
+==============================================================================
+OPS-105: Export button not working (duplicate?)
+------------------------------------------------------------------------------
+Category:     bug
+Priority:     high
+Duplicate of: OPS-101
+Action:       close_duplicate
+Retrieved:    []
+Response:     Thanks for the report! This looks like the same issue as OPS-101, so we're linking and closing this one to keep discussion in a single place. We'll post updates...
+
+Trace:
+  - classify_ticket -> category=bug, priority=high
+  - check_duplicates -> duplicate_of=OPS-101
+  - retrieve_docs -> skipped (duplicate)
+  - decide_action -> action=close_duplicate
+  - generate_response -> duplicate reply
+  - update_ticket -> 4 write(s) applied
+
+==============================================================================
+OPS-106: API rate limit is too low for our integration
+------------------------------------------------------------------------------
+Category:     feature_request
+Priority:     medium
+Duplicate of: None
+Action:       route_to_engineering
+Retrieved:    ['kb_api_rate_limits', 'kb_export_csv']
+Response:     Hi there — thanks for the report! This is a known issue our team is actively working on. We've included a workaround below based on our internal documentation a...
+
+Trace:
+  - classify_ticket -> category=feature_request, priority=medium
+  - check_duplicates -> duplicate_of=None
+  - retrieve_docs -> sources=['kb_api_rate_limits', 'kb_export_csv']
+  - decide_action -> action=route_to_engineering
+  - generate_response -> drafted reply
+  - update_ticket -> 4 write(s) applied
+
+==============================================================================
+Done. This was run with the offline StubLLM unless ANTHROPIC_API_KEY was set -- see README for how to switch to real Claude responses.
