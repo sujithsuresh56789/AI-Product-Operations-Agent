@@ -65,8 +65,8 @@ Full output for all 6 sample tickets is in [`demo/example_run.txt`](demo/example
 ## Getting started
 
 ```bash
-git clone <your-repo-url>
-cd ai-product-ops-agent
+git clone https://github.com/sujithsuresh56789/AI-Product-Operations-Agent
+cd AI-Product-Operations-Agent
 pip install -r requirements.txt
 
 # optional — see below
